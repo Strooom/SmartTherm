@@ -1,0 +1,12 @@
+[*.h]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cpp]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
