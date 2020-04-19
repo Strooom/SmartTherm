@@ -37,7 +37,7 @@ void TemperatureController::run()										// update Day / Night and drive outpu
     if ((ctrlState::day == theState) && (!isDay()))
         {
         theState = ctrlState::night;									// change from day to night,
-        setTemp = setTempNight;													// resets setTemp
+        setTemp = setTempNight;											// resets setTemp
         }
 
     if ((ctrlState::night == theState) && (isDay()))
