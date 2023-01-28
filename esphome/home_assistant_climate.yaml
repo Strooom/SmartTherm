@@ -1,0 +1,64 @@
+climate:
+# documentation: https://www.home-assistant.io/integrations/generic_thermostat/
+  - platform: generic_thermostat
+    unique_id: junkers_therme
+    name: junkers_therme
+    heater: switch.smarttherm_heating
+    target_temp: 20
+    max_temp: 22
+    min_temp: 17
+    target_sensor: sensor.inside_temperature
+    precision: 0.5
+    min_cycle_duration:
+      seconds: 30
+    comfort_temp: 20.5
+    sleep_temp: 19.5
+    away_temp: 19
+
+input_boolean:
+  sleeping_time:
+
+automation:
+  - alias: sync_smarttherm_state_with_climate
+    trigger:
+      - platform: state
+        entity_id: switch.smarttherm_heating
+        from: "unavailable"
+        to:
+          - "on"
+          - "off"
+    action:
+      entity_id: switch.smarttherm_heating
+      service: >-
+        {% if is_state_attr('climate.junkers_therme', 'hvac_action', 'heat') %}
+          switch.turn_on
+        {% else %}
+          switch.turn_off
+        {% endif %}
+
+  - alias: set_smarttherm_power_level
+    trigger:
+      - platform: state
+        entity_id: climate.junkers_therme
+        attribute: current_temperature
+        not_to: "unavailable"
+      - platform: state
+        entity_id: climate.junkers_therme
+        attribute: temperature
+        not_to: "unavailable"
+    condition: >-
+      {{ states('number.smarttherm_power_level') | is_number }}
+    action:
+      service: number.set_value
+      target:
+        entity_id: number.smarttherm_power_level
+      data:
+        value: >-
+          {% set target_temp = state_attr('climate.junkers_therme','temperature') | float(-1) %}
+          {% set current_temp = state_attr('climate.junkers_therme','current_temperature') | float(-1) %}
+          {% if ((target_temp > 0) and (current_temp > 0)) and (target_temp > current_temp) %}
+            {% set val = (target_temp - current_temp)**3 %}
+            {{ (100 if val > 100 else val) | round(0, "ceil") }}
+          {% else %}
+            1
+          {% endif %}
