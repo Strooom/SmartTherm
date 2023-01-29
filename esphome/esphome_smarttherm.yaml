@@ -1,0 +1,180 @@
+#see documentation: https://esphome.io
+
+substitutions:
+  unit_name: "smarttherm"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  fast_connect: true
+  reboot_timeout: 0s
+
+  ap:
+    ssid: ${unit_name} Fallback Hotspot
+    password: !secret fallback_password
+
+captive_portal:
+
+ota:
+  password: !secret ota_password
+
+# native api of ESPHome
+#api:
+#  password: !secret api_password
+
+# or mqtt (my choice)
+ mqtt:
+  broker: !secret mqtt_broker
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+
+# web frontend and REST interface
+web_server:
+  auth:
+    username: !secret web_server_username
+    password: !secret web_server_password
+
+esphome:
+  name: ${unit_name}
+  platform: ESP8266
+  board: d1_mini
+  esp8266_restore_from_flash: True # for slider position and switch state
+  on_boot:
+    priority: -100 # after everything is initialized
+    then:
+      - script.execute: update_pwm_level
+
+logger:
+  level: INFO
+
+output:
+  - platform: esp8266_pwm
+    pin: D8 # octocopler drive
+    frequency: 1000 Hz # default
+    id: pwm_output
+
+switch:
+  - platform: gpio
+    pin: D4
+    id: onboard_led
+    inverted: True
+    internal: True
+
+  - platform: template
+    name: ${unit_name}_heating
+    id: heating
+    entity_category: config
+    restore_state: True
+    optimistic: True
+    turn_on_action:
+      - switch.turn_on: onboard_led
+      - script.execute: set_pwm_level_from_slider
+    turn_off_action:
+      - switch.turn_off: onboard_led
+      - script.execute: set_pwm_low_level
+
+script:
+  - id: set_pwm_level_from_slider
+    then:
+      - lambda: |-
+          id(pwm_output).set_level(id(pwm_output_level).state);
+
+  - id: set_pwm_low_level
+    then:
+      - lambda: |-
+          id(pwm_output).set_level(0.07);// ~5v off
+
+  - id: update_pwm_level
+    then:
+      - lambda: |-
+          if (id(heating).state) {
+            id(set_pwm_level_from_slider).execute();
+          } else {
+            id(set_pwm_low_level).execute();
+          }
+
+number:
+  # power slider in percent for home assistant
+  - platform: template
+    name: ${unit_name}_power_level
+    id: power_level
+    restore_value: True
+    step: 1
+    min_value: 1
+    max_value: 100
+    unit_of_measurement: "%"
+    mode: slider
+    optimistic: True
+    entity_category: config
+    on_value:
+      then:
+      - sensor.template.publish:
+          id: pwm_output_level
+          state: !lambda "return x;"
+
+sensor:
+  # map percent slider value to float level of pwm output
+  # based on http://www.roter-unimog.de/p4/46-hzg-technik.htm
+  - platform: template
+    id: pwm_output_level
+    internal: True
+    lambda: |-
+      return id(power_level).state;
+    filters:
+     # measure voltage and adjust for your device
+      - calibrate_linear:
+        - 1 -> 0.25 # ~8v min
+        - 100.0 -> 0.62 # ~15v max
+    on_value:
+      then:
+      - logger.log:
+          level: INFO
+          format: "pwm ouput level: %.2f"
+          args: ['x']
+      - script.execute: update_pwm_level
+
+## optional:
+
+  - platform: adc # ranges from 0v to 1v
+    pin: A0
+    name: ${unit_name}_ldr
+    unit_of_measurement: "mV"
+    filters:
+      - multiply: 1000
+
+  - platform: dht # for DS18B20 see https://esphome.io/components/sensor/dallas.html
+    pin: D3
+    model: DHT22_TYPE2
+    humidity:
+      name: ${unit_name}_humidity
+    temperature:
+      name: ${unit_name}_temperature
+      on_value_range: # backup control, adjust this to your liking
+      - below: 17.0
+        then:
+          - logger.log:
+              level: WARN
+              format: "turn on heating, current temperature: %.2f"
+              args: ['x']
+          - switch.turn_on: heating
+      - above: 22.0
+        then:
+          - logger.log:
+              level: WARN
+              format: "turn off heating, current temperature: %.2f"
+              args: ['x']
+          - switch.turn_off: heating
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: D1 # octocopler output of 24v line
+      inverted: True
+      mode:
+        input: True
+        pullup: True
+    name: ${unit_name}_active
+    id: power_active
+    filters: # debounce
+      - delayed_on: 5s
+      - delayed_off: 5s
