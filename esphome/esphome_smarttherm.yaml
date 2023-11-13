@@ -20,7 +20,9 @@ ota:
 
 # native api of ESPHome
 #api:
-#  password: !secret api_password
+#  reboot_timeout: 60min
+#  encryption:
+#    key: !secret encryption_key
 
 # or mqtt (my choice)
  mqtt:
