@@ -20,7 +20,9 @@ ota:
 
 # native api of ESPHome
 #api:
-#  password: !secret api_password
+#  reboot_timeout: 60min
+#  encryption:
+#    key: !secret encryption_key
 
 # or mqtt (my choice)
  mqtt:
@@ -54,24 +56,27 @@ output:
     id: pwm_output
 
 switch:
-  - platform: gpio
-    pin: D4
-    id: onboard_led
-    inverted: True
-    internal: True
-
   - platform: template
     name: ${unit_name}_heating
     id: heating
     entity_category: config
-    restore_state: True
+    restore_mode: RESTORE_DEFAULT_OFF
+    icon: "mdi:water-boiler"
     optimistic: True
     turn_on_action:
-      - switch.turn_on: onboard_led
+      - light.turn_on: onboard_led
       - script.execute: set_pwm_level_from_slider
     turn_off_action:
-      - switch.turn_off: onboard_led
+      - light.turn_off: onboard_led
       - script.execute: set_pwm_low_level
+
+light:
+  - platform: status_led
+    id: onboard_led
+    internal: True
+    pin:
+      number: D4
+      inverted: true
 
 script:
   - id: set_pwm_level_from_slider
@@ -106,6 +111,7 @@ number:
     mode: slider
     optimistic: True
     entity_category: config
+    icon: "mdi:gas-burner"
     on_value:
       then:
       - sensor.template.publish:
@@ -175,6 +181,7 @@ binary_sensor:
         pullup: True
     name: ${unit_name}_active
     id: power_active
+    device_class: power
     filters: # debounce
       - delayed_on: 5s
       - delayed_off: 5s
