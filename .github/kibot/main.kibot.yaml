@@ -1,0 +1,94 @@
+# https://github.com/INTI-CMNB/KiBot/tree/dev/tests/yaml_samples
+
+kibot:
+  version: 1
+
+preflight:
+  set_text_variables:
+    - variable: "majorVersion"
+      command: "echo $MAJORVERSIONDIGIT" 
+    - variable: "minorVersion"
+      command: "echo $MINORVERSIONDIGIT" 
+    - variable: "releaseDate"
+      command: "echo $BUILDTIMESTAMP" 
+    - variable: "releaseDateShort"
+      command: "echo $BUILDTIMESTAMPSHORT" 
+  check_zone_fills: true
+  erc:
+    category: 'schematics'
+    dir: 'reports'
+    format: 'HTML, RPT'
+    output: 'schematic electrical-rule-check report.%x'
+  drc:
+    category: 'pcb'
+    dir: 'reports'
+    format: 'HTML, RPT'
+    output: 'PCB design-rule-check report.%x'
+
+outputs:
+# Schematic outputs
+  - name: 'Schematic PDF'
+    type: pdf_sch_print
+    dir: 'schematic'
+
+# BOM outputs
+  - name: 'Interactive BOM'
+    type: ibom
+    dir: 'bom'
+    category: 'bom'
+
+  - name: 'CSV export'
+    type: bom
+    dir: 'bom'
+    category: 'bom'
+
+# PCB outputs
+  - name: 'print_pcb'
+    dir: 'pcb'
+    type: pcb_print
+    options:
+      scaling: 0
+      autoscale_margin_x: 10
+      autoscale_margin_y: 10
+      format: 'PDF'
+      plot_sheet_reference: false
+      pages:
+        - layers:
+            - layer: F.Cu
+              color: '#E23B51'
+          sort_layers: true
+        - layers:
+            - layer: F.Silkscreen
+          monochrome: true
+          sort_layers: true
+        - layers:
+            - layer: B.Cu
+              color: '#3361B8'
+          sort_layers: true
+          mirror: true
+
+  - name: '3D model - .step'
+    type : step
+    dir: 'pcb'
+
+  - name: 'render front'
+    type: blender_export
+    dir: 'pcb'
+    options:
+      add_default_light: true
+      light:
+        type: 'SUN'
+      render_options:
+        auto_crop: true
+        transparent_background: true
+        samples: 20
+      point_of_view:
+        - rotate_x: 20
+          rotate_y: 0
+        - rotate_x: -20
+          rotate_y: 180
+      fixed_auto_camera: false
+      auto_camera_z_axis_factor: 1.5
+      default_file_id: '_%03d'
+      outputs:
+        - type: render

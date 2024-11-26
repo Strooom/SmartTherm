@@ -1,0 +1,183 @@
+name: "KiCad ERC/DRC Check and Outputs generation"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, develop]
+
+jobs:
+  drcerc:
+    name: Run DRC and ERC, Export Schematic as PDF
+    permissions: write-all
+    runs-on: ubuntu-latest
+    outputs:
+      branchname: ${{ steps.versioninfo.outputs.branchname }}
+      commithash: ${{ steps.versioninfo.outputs.commithash }}
+      buildtimestamp: ${{ steps.versioninfo.outputs.buildtimestamp }}
+      buildtimestampshort: ${{ steps.versioninfo.outputs.buildtimestampshort }}
+      lastmajordigit: ${{ steps.versioninfo.outputs.lastmajordigit }}
+      lastminordigit: ${{ steps.versioninfo.outputs.lastminordigit }}
+      lastpatchdigit: ${{ steps.versioninfo.outputs.lastpatchdigit }}
+      lastversion: ${{ steps.versioninfo.outputs.lastversion }}
+      nextmajordigit: ${{ steps.selectversion.outputs.nextmajordigit }}
+      nextminordigit: ${{ steps.selectversion.outputs.nextminordigit }}
+      nextpatchdigit: ${{ steps.selectversion.outputs.nextpatchdigit }}
+      buildversion: ${{ steps.selectversion.outputs.buildversion }}
+
+    env: 
+      CI_COMMIT_MESSAGE: add workflow generated files
+      CI_COMMIT_AUTHOR: CD Workflow
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get version data
+        id: versioninfo
+        run: |
+          echo "extract branch name from github_ref '${{ github.ref }}'"
+          declare branchname=$(echo "${{ github.ref }}" | cut -d'/' -f 3-)
+          echo "clean branch name = $branchname"
+          echo "extract commit short hash : $(git rev-parse --short HEAD)"
+          declare commithash=$(git rev-parse --short HEAD)
+          echo "extract build timestamp"
+          declare buildtimestamp=$(date +"%a %b %d %H:%M:%S %Y")
+          echo "buildtimestamp = $buildtimestamp"
+          declare buildtimestampshort=$(date +"%d %b %y")
+
+          declare fulltag=$(git describe --tag $(git rev-parse --verify refs/remotes/origin/main))
+          echo "fulltag = [$fulltag]"
+          declare versiontag=$(echo $fulltag | cut -d'-' -f1)
+          echo "extract SemVer numbers from version tag [$versiontag]"
+          declare -i lastmajordigit=$(echo $versiontag | cut -c 2- | cut -d'.' -f1)
+          echo "lastmajordigit = $lastmajordigit"
+          declare -i lastminordigit=$(echo $versiontag | cut -c 2- | cut -d'.' -f2)
+          echo "lastminordigit = $lastminordigit"
+          declare lastversion="v$lastmajordigit.$lastminordigit"
+          echo "output variables to GitHub Actions"
+          echo "branchname=$branchname" >> $GITHUB_OUTPUT
+          echo "lastmajordigit=$lastmajordigit" >> $GITHUB_OUTPUT
+          echo "lastminordigit=$lastminordigit" >> $GITHUB_OUTPUT
+          echo "commithash=$commithash" >> $GITHUB_OUTPUT
+          echo "buildtimestamp=$buildtimestamp" >> $GITHUB_OUTPUT
+          echo "buildtimestampshort=$buildtimestampshort" >> $GITHUB_OUTPUT
+          echo "lastversion=$lastversion" >> $GITHUB_OUTPUT
+
+      - name: Determine which version to build
+        id: selectversion
+        run: |
+          echo "Triggered from Branch : ${{ steps.versioninfo.outputs.branchname }}"
+          echo "Commit hash           : ${{ steps.versioninfo.outputs.commithash }}"
+          echo "Last version          : ${{ steps.versioninfo.outputs.lastversion }}"
+          echo "  Major               : ${{ steps.versioninfo.outputs.lastmajordigit }}"
+          echo "  Minor               : ${{ steps.versioninfo.outputs.lastminordigit }}"
+          if [ "${{ steps.versioninfo.outputs.branchname }}" == "main" ]; then
+            echo "Triggered from merge on main branch with commit title : ${{ github.event.head_commit.message }}"
+            if [[ "${{ github.event.head_commit.message }}" == *"major"* ]]; then
+              echo "Incrementing Major versionDigit"
+              declare -i nextmajordigit=${{ steps.versioninfo.outputs.lastmajordigit }}+1
+              declare -i nextminordigit=0
+              declare buildversion="v$nextmajordigit.$nextminordigit"
+            else
+              echo "Incrementing Minor versionDigit"
+              declare -i nextmajordigit=${{ steps.versioninfo.outputs.lastmajordigit }}
+              declare -i nextminordigit=${{ steps.versioninfo.outputs.lastminordigit }}+1
+              declare buildversion="v$nextmajordigit.$nextminordigit"
+            fi
+          else
+            echo "Not on main branch -> development version"
+            declare -i nextmajordigit=${{ steps.versioninfo.outputs.lastmajordigit }}
+            declare -i nextminordigit=${{ steps.versioninfo.outputs.lastminordigit }}
+            declare buildversion="v$nextmajordigit.$nextminordigit-${{ steps.versioninfo.outputs.commithash }}"
+          fi
+          echo "Building Version : $buildversion"
+          echo "  Major          : $nextmajordigit"
+          echo "  Minor          : $nextminordigit"
+          echo "output variables to GitHub Actions"
+          echo "nextmajordigit=$nextmajordigit" >> $GITHUB_OUTPUT
+          echo "nextminordigit=$nextminordigit" >> $GITHUB_OUTPUT
+          echo "buildversion=$buildversion" >> $GITHUB_OUTPUT
+  
+      - name: Show Build info
+        id: showbuildinfo
+        run: |
+          echo "Build Version         : ${{ steps.selectversion.outputs.buildversion }}"
+          echo "  Major               : ${{ steps.selectversion.outputs.nextmajordigit }}"
+          echo "  Minor               : ${{ steps.selectversion.outputs.nextminordigit }}"
+          echo "Build Timestamp       : ${{ steps.versioninfo.outputs.buildtimestamp }}"
+          echo "Build Timestamp Short : ${{ steps.versioninfo.outputs.buildtimestampshort }}"
+
+      # - name: Save Build info
+      #   uses: "DamianReeves/write-file-action@master"
+      #   with:
+      #     path: .github/kibot/version.yaml
+      #     write-mode: overwrite
+      #     contents: |
+      #       # ##########################################################################
+      #       # ### This file is generated by Build and Continuous Integration script  ###
+      #       # ###   .github/workflows/checkandgenerate.yml for CI environment        ###
+      #       # ### Changes will be overwritten on the next workflow run               ###
+      #       # ##########################################################################
+      #       definitions:
+      #         majorVersionDigit: ${{ steps.selectversion.outputs.nextmajordigit }}
+      #         minorVersionDigit: ${{ steps.selectversion.outputs.nextminordigit }}
+      #         lastCommitTag: "${{ steps.versioninfo.outputs.commithash }}"
+      #         buildTimeStamp: "${{ steps.versioninfo.outputs.buildtimestamp }}"
+
+      # - name: Verify Saved Build info
+      #   run: |
+      #     cat .github/kibot/version.yaml
+
+      - name: Save info in environment variables
+        run: |
+          echo "MAJORVERSIONDIGIT=${{ steps.selectversion.outputs.nextmajordigit }}" >> $GITHUB_ENV
+          echo "MINORVERSIONDIGIT=${{ steps.selectversion.outputs.nextminordigit }}" >> $GITHUB_ENV
+          echo "BUILDTIMESTAMP=${{ steps.versioninfo.outputs.buildtimestamp }}" >> $GITHUB_ENV
+          echo "BUILDTIMESTAMPSHORT=${{ steps.versioninfo.outputs.buildtimestampshort }}" >> $GITHUB_ENV
+
+      - name: Verify environment variables
+        run: |
+          echo $MAJORVERSIONDIGIT
+          echo $MINORVERSIONDIGIT
+          echo $BUILDTIMESTAMP
+          echo $BUILDTIMESTAMPSHORT
+
+      - name: run KiBOT 
+        uses: INTI-CMNB/KiBot@v2_k8
+        with:
+#          additional_args: '--verbose'
+          config: .github/kibot/main.kibot.yaml
+          dir: outputs
+
+      - name: GIT Commit CI Artifacts
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "pascal.roobrouck@gmail.com"
+          git add .
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
+
+      - name: Release when on main branch
+        id: createrelease
+        uses: actions/create-release@v1
+        if: ${{ steps.versioninfo.outputs.branchname == 'main'}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.selectversion.outputs.buildversion }}
+          release_name: Release ${{ steps.selectversion.outputs.buildversion }}
+          draft: false
+          prerelease: false
+
+      # - name: Attach Binary to Release
+      #   id: attachbinarytorelease
+      #   uses: actions/upload-release-asset@v1
+      #   if: ${{ steps.versioninfo.outputs.branchname == 'main'}}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.createrelease.outputs.upload_url }}
+      #     asset_path: .pio/build/production/firmware.bin
+      #     asset_name: ${{ steps.selectversion.outputs.buildversionfilename }}.bin
+      #     asset_content_type: application/octet-stream
