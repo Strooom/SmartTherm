@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "SmartTherm")
-		(date "2020-10-13")
-		(rev "V1.0")
+		(date "2024-11-26")
+		(rev "V3.0")
 		(company "Strooom")
 	)
 	(lib_symbols
@@ -4255,6 +4255,7 @@
 	)
 	(label "24Present"
 		(at 124.46 87.63 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4265,6 +4266,7 @@
 	)
 	(label "Tin"
 		(at 90.17 76.2 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4275,6 +4277,7 @@
 	)
 	(label "TX"
 		(at 55.88 97.79 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4285,6 +4288,7 @@
 	)
 	(label "Drive1"
 		(at 93.98 102.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4295,6 +4299,7 @@
 	)
 	(label "Drive2"
 		(at 152.4 102.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4305,6 +4310,7 @@
 	)
 	(label "RX"
 		(at 55.88 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4350,7 +4356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83640/ild74.pdf"
+		(property "Datasheet" "https://www.vishay.com/doc?83640"
 			(at 140.97 90.17 0)
 			(effects
 				(font
@@ -4361,6 +4367,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "ILD74"
+			(at 140.97 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "782-ILD74"
 			(at 140.97 90.17 0)
 			(effects
 				(font
@@ -4438,7 +4462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83640/ild74.pdf"
+		(property "Datasheet" "https://www.vishay.com/doc?83640"
 			(at 140.97 105.41 0)
 			(effects
 				(font
@@ -4449,6 +4473,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 140.97 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "ILD74"
+			(at 140.97 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "782-ILD74"
 			(at 140.97 105.41 0)
 			(effects
 				(font
@@ -4524,7 +4566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lm358-n"
 			(at 193.04 93.98 0)
 			(effects
 				(font
@@ -4534,6 +4576,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "LM358N/NOPB"
+			(at 193.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "926-LM358N/NOPB"
 			(at 193.04 93.98 0)
 			(effects
 				(font
@@ -4609,7 +4669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lm358-n"
 			(at 224.79 96.52 0)
 			(effects
 				(font
@@ -4619,6 +4679,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 224.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "LM358N/NOPB"
+			(at 224.79 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "926-LM358N/NOPB"
 			(at 224.79 96.52 0)
 			(effects
 				(font
@@ -4696,7 +4774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lm358-n"
 			(at 255.27 96.52 0)
 			(effects
 				(font
@@ -4706,6 +4784,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 255.27 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "LM358N/NOPB"
+			(at 255.27 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "926-LM358N/NOPB"
 			(at 255.27 96.52 0)
 			(effects
 				(font
@@ -4791,6 +4887,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 71.12 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" ""
+			(at 71.12 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
 			(at 71.12 97.79 0)
 			(effects
 				(font
@@ -4975,6 +5089,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" ""
+			(at 176.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
+			(at 176.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aa0432b0-35b9-4d57-857b-44118a07d238")
 		)
@@ -5044,6 +5176,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" ""
+			(at 158.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
+			(at 158.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2de60b02-645c-4e44-a4f9-6986d157a257")
 		)
@@ -5103,6 +5253,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 114.3 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" ""
+			(at 114.3 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
 			(at 114.3 102.87 0)
 			(effects
 				(font
@@ -5180,6 +5348,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" ""
+			(at 124.46 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
+			(at 124.46 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "12870c36-438a-444a-91ed-93f8a7c5e039")
 		)
@@ -5249,6 +5435,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" "CCF551K00FKE36"
+			(at 102.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "71-CCF551K00FKE36"
+			(at 102.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "397043a5-269b-4597-8671-92f0b33a43a1")
 		)
@@ -5302,7 +5506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+		(property "Datasheet" "https://diotec.com/request/datasheet/bc546.pdf"
 			(at 173.99 102.87 0)
 			(effects
 				(font
@@ -5313,6 +5517,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "BC546A"
+			(at 173.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "637-BC546A"
 			(at 173.99 102.87 0)
 			(effects
 				(font
@@ -5521,6 +5743,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" "CCF551K00FKE36"
+			(at 238.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "71-CCF551K00FKE36"
+			(at 238.76 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "355664f5-0792-42f9-937f-4de0fc218f23")
 		)
@@ -5573,7 +5813,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf?ref_disty=mouser"
 			(at 242.57 116.84 0)
 			(effects
 				(font
@@ -5583,6 +5823,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 242.57 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "FA22X7R2J104KNU06"
+			(at 242.57 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "810-FA22X7R2J104KNU6"
 			(at 242.57 116.84 0)
 			(effects
 				(font
@@ -5643,7 +5901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.be/datasheet/2/281/1/RCE_X7R_X7S_25V_100V_E-1670872.pdf"
 			(at 212.09 116.84 0)
 			(effects
 				(font
@@ -5653,6 +5911,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "RCEC72A475MWM1H03A"
+			(at 212.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "81-RCEC72A475MWM1H3A"
 			(at 212.09 116.84 0)
 			(effects
 				(font
@@ -5720,6 +5996,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 205.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" ""
+			(at 205.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
 			(at 205.74 93.98 0)
 			(effects
 				(font
@@ -5797,6 +6091,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" ""
+			(at 168.91 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" ""
+			(at 168.91 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bddb03e2-de1a-46fa-a066-0b869e39f34c")
 		)
@@ -5848,7 +6160,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.vishay.com/doc?31015"
 			(at 90.17 71.12 0)
 			(effects
 				(font
@@ -5858,6 +6170,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 90.17 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "CCF554K70FKE36"
+			(at 90.17 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "71-CCF554K70FKE36"
 			(at 90.17 71.12 0)
 			(effects
 				(font
@@ -6048,7 +6378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1711042/pdf"
 			(at 269.24 69.85 0)
 			(effects
 				(font
@@ -6058,6 +6388,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 269.24 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "1711042"
+			(at 269.24 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "651-1711042"
 			(at 269.24 69.85 0)
 			(effects
 				(font
@@ -6139,6 +6487,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" "na"
+			(at 35.56 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "na"
+			(at 35.56 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bb23b20e-1d07-4cd6-8835-233f91d6d5f8")
 		)
@@ -6195,6 +6561,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "na"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "na"
 			(at 35.56 114.3 0)
 			(effects
 				(font
@@ -6267,6 +6651,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" "na"
+			(at 35.56 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "na"
+			(at 35.56 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d898613-f6dd-4cba-98d6-cd361124cbf2")
 		)
@@ -6331,6 +6733,24 @@
 				(hide yes)
 			)
 		)
+		(property "manufacturerPartNumber" "na"
+			(at 35.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "na"
+			(at 35.56 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "68ebf782-bdd0-4f2a-aa18-c537e076624d")
 		)
@@ -6378,7 +6798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1730052/pdf"
 			(at 34.29 90.17 0)
 			(effects
 				(font
@@ -6388,6 +6808,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 34.29 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "1730052"
+			(at 34.29 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "651-1730052"
 			(at 34.29 90.17 0)
 			(effects
 				(font
@@ -6460,7 +6898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/us/products/1711026/pdf"
 			(at 107.95 72.39 0)
 			(effects
 				(font
@@ -6470,6 +6908,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 107.95 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manufacturerPartNumber" "1711026"
+			(at 107.95 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mouserPartNumber" "651-1711026"
 			(at 107.95 72.39 0)
 			(effects
 				(font

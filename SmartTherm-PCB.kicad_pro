@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.3,
-          "height": 2.6,
-          "width": 2.6
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -645,13 +645,13 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -664,6 +664,18 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "manufacturerPartNumber",
+          "name": "manufacturerPartNumber",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "mouserPartNumber",
+          "name": "mouserPartNumber",
+          "show": true
         }
       ],
       "filter_string": "",
