@@ -4395,7 +4395,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "1projectLibrary:DIP-8_W7.62mm"
 			(at 146.05 97.79 0)
 			(effects
 				(font
@@ -4501,7 +4501,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "1projectLibrary:DIP-8_W7.62mm"
 			(at 135.89 110.49 0)
 			(effects
 				(font
@@ -4607,7 +4607,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "1projectLibrary:DIP-8_W7.62mm"
 			(at 193.04 93.98 0)
 			(effects
 				(font
@@ -4710,7 +4710,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "1projectLibrary:DIP-8_W7.62mm"
 			(at 224.79 96.52 0)
 			(effects
 				(font
@@ -4815,7 +4815,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "1projectLibrary:DIP-8_W7.62mm"
 			(at 255.27 96.52 0)
 			(effects
 				(font
@@ -5545,7 +5545,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
+		(property "Footprint" "1projectLibrary:TO-92L_Inline_Wide"
 			(at 179.07 104.775 0)
 			(effects
 				(font
@@ -5854,7 +5854,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+		(property "Footprint" "1projectLibrary:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 241.6048 120.65 0)
 			(effects
 				(font
@@ -5942,7 +5942,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+		(property "Footprint" "1projectLibrary:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 211.1248 120.65 0)
 			(effects
 				(font
@@ -6419,7 +6419,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-5.0-H_1x04_P5.00mm_Horizontal"
+		(property "Footprint" "1projectLibrary:TerminalBlock_Junkers"
 			(at 269.24 69.85 0)
 			(effects
 				(font
@@ -6939,7 +6939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal"
+		(property "Footprint" "1projectLibrary:TerminalBlock_LDR"
 			(at 107.95 72.39 0)
 			(effects
 				(font
