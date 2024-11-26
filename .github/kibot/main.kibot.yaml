@@ -36,6 +36,8 @@ outputs:
     type: ibom
     dir: 'bom'
     category: 'bom'
+    options:
+      extra_fields: 'manufacturerPartNumber, mouserPartNumber'
 
   - name: 'CSV export'
     type: bom
