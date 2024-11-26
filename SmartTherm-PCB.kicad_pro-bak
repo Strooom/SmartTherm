@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [],
@@ -730,5 +730,10 @@
       "Root"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "majorVersion": "1",
+    "minorVersion": "0",
+    "releaseDate": "Tue Nov 26 11:26:53 2024",
+    "releaseDateShort": "26 Nov 24"
+  }
 }

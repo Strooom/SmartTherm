@@ -2816,7 +2816,7 @@
 		(descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "U2"
-			(at -2.25 -1.34 360)
+			(at -2.25 -1.34 0)
 			(layer "F.SilkS")
 			(uuid "ccfb46da-317f-41f9-90bf-5a85e2b1b98a")
 			(effects
@@ -2940,7 +2940,7 @@
 			(uuid "78357114-148d-4704-a21a-7f9edf599e09")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.5 1.66 360)
+			(at -0.5 1.66 0)
 			(layer "F.Fab")
 			(uuid "71e7080d-fb08-448c-9cbb-06bbfeebf1c1")
 			(effects
@@ -3050,7 +3050,7 @@
 		(descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "U3"
-			(at -2.25 -1.34 360)
+			(at -2.25 -1.34 0)
 			(layer "F.SilkS")
 			(uuid "07efcb62-b096-4b8d-98b0-27d107453a5a")
 			(effects
@@ -3174,7 +3174,7 @@
 			(uuid "caa80d95-a9f6-4fc0-9795-af9feda327b0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.5 1.66 360)
+			(at -0.5 1.66 0)
 			(layer "F.Fab")
 			(uuid "0090d6b9-4ef0-43c3-ab0a-f6490b44c09a")
 			(effects

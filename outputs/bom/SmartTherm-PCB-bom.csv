@@ -2,8 +2,8 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 1,,C,C2,100 nF,C_Disc_D4.7mm_W2.5mm_P5.00mm,1, ,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf?ref_disty=mouser,FA22X7R2J104KNU06,810-FA22X7R2J104KNU6
 2,,C,C1,4.7uF,C_Disc_D4.7mm_W2.5mm_P5.00mm,1, ,https://www.mouser.be/datasheet/2/281/1/RCE_X7R_X7S_25V_100V_E-1670872.pdf,RCEC72A475MWM1H03A,81-RCEC72A475MWM1H3A
 3,,Screw_Terminal_01x06,J2,Display - Sensor,"TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal",1, ,https://www.phoenixcontact.com/us/products/1730052/pdf,1730052,651-1730052
-4,,Screw_Terminal_01x02,J3,Ext LDR,"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal",1, ,https://www.phoenixcontact.com/us/products/1711026/pdf,1711026,651-1711026
-5,,Screw_Terminal_01x04,J1,Junkers,"TerminalBlock_Phoenix_PT-1,5-4-5.0-H_1x04_P5.00mm_Horizontal",1, ,https://www.phoenixcontact.com/us/products/1711042/pdf,1711042,651-1711042
+4,,Screw_Terminal_01x02,J3,Ext LDR,TerminalBlock_LDR,1, ,https://www.phoenixcontact.com/us/products/1711026/pdf,1711026,651-1711026
+5,,Screw_Terminal_01x04,J1,Junkers,TerminalBlock_Junkers,1, ,https://www.phoenixcontact.com/us/products/1711042/pdf,1711042,651-1711042
 6,,BC546,Q1,BC546,TO-92L_Inline_Wide,1, ,https://diotec.com/request/datasheet/bc546.pdf,BC546A,637-BC546A
 7,,R,R7,470,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1, ,https://www.vishay.com/doc?31027,RL07S471GB14,71-RL07S-G-470
 8,,R,R8 R9,1K,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,2, ,https://www.vishay.com/doc?31027,RL07S102GB14,71-RL07S-G-1K
