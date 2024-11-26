@@ -730,10 +730,5 @@
       "Root"
     ]
   ],
-  "text_variables": {
-    "majorVersion": "1",
-    "minorVersion": "0",
-    "releaseDate": "Tue Nov 26 11:26:53 2024",
-    "releaseDateShort": "26 Nov 24"
-  }
+  "text_variables": {}
 }

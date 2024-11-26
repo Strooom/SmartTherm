@@ -1,0 +1,34 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,manufacturerPartNumber,mouserPartNumber
+1,,C,C2,100 nF,C_Disc_D4.7mm_W2.5mm_P5.00mm,1, ,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf?ref_disty=mouser,FA22X7R2J104KNU06,810-FA22X7R2J104KNU6
+2,,C,C1,4.7uF,C_Disc_D4.7mm_W2.5mm_P5.00mm,1, ,https://www.mouser.be/datasheet/2/281/1/RCE_X7R_X7S_25V_100V_E-1670872.pdf,RCEC72A475MWM1H03A,81-RCEC72A475MWM1H3A
+3,,Screw_Terminal_01x06,J2,Display - Sensor,"TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal",1, ,https://www.phoenixcontact.com/us/products/1730052/pdf,1730052,651-1730052
+4,,Screw_Terminal_01x02,J3,Ext LDR,"TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal",1, ,https://www.phoenixcontact.com/us/products/1711026/pdf,1711026,651-1711026
+5,,Screw_Terminal_01x04,J1,Junkers,"TerminalBlock_Phoenix_PT-1,5-4-5.0-H_1x04_P5.00mm_Horizontal",1, ,https://www.phoenixcontact.com/us/products/1711042/pdf,1711042,651-1711042
+6,,BC546,Q1,BC546,TO-92L_Inline_Wide,1, ,https://diotec.com/request/datasheet/bc546.pdf,BC546A,637-BC546A
+7,,R,R7,470,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1, ,https://www.vishay.com/doc?31027,RL07S471GB14,71-RL07S-G-470
+8,,R,R8 R9,1K,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,2, ,https://www.vishay.com/doc?31027,RL07S102GB14,71-RL07S-G-1K
+9,,R,R1,3K3,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1, ,https://www.vishay.com/doc?31027,RL07S332GB14,71-RL07S-G-3.3K
+10,,R,R10,4K7,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1, ,https://www.vishay.com/doc?31027,RL07S472GB14,71-RL07S-G-4.7K
+11,,R,R3 R4,10K,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,2, ,https://www.vishay.com/doc?31027,RL07S103GB14,71-RL07S-G-10K
+12,,R,R5,22K,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1, ,https://www.vishay.com/doc?31027,RL07S223GB14,71-RL07S-G-22K
+13,,R,R6,47K,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,1, ,https://www.vishay.com/doc?31027,RL07S473GB14,71-RL07S-G-47K
+14,,ILD74,U2,ILD74,DIP-8_W7.62mm,1, ,https://www.vishay.com/doc?83640,ILD74,782-ILD74
+15,,LM358,U3,LM358,DIP-8_W7.62mm,1, ,https://www.ti.com/lit/gpn/lm358-n,LM358N/NOPB,926-LM358N/NOPB
+16,,WeMos_D1_mini,U1,WeMos D1 mini,WEMOS_D1_mini_light,1, ,https://wiki.wemos.cc/products:d1:d1_mini#documentation,,
+
+
+
+
+
+Project info:
+Schematic:,SmartTherm-PCB
+Variant:,default
+Revision:,V3.0
+Date:,2024-11-26
+KiCad Version:,8.0.6+1
+Statistics:
+Component Groups:,16
+Component Count:,18
+Fitted Components:,18
+Number of PCBs:,1
+Total Components:,18
