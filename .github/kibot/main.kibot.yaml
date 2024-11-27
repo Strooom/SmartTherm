@@ -3,6 +3,13 @@
 kibot:
   version: 1
 
+import:
+  - file: preflights.kibot.yaml
+  - file: schematic.kibot.yaml
+  - file: bom.kibot.yaml
+  - file: pcb.kibot.yaml
+  - file: renders.kibot.yaml
+
 preflight:
   set_text_variables:
     - variable: "majorVersion"
@@ -128,6 +135,6 @@ outputs:
     options:
       output: 'simple'
       currency: 'EUR'
-      distributors: 'Mouser'
+      distributors: 'mouser'
       # no_price: true
       # no_collapse: true
