@@ -33,6 +33,7 @@ outputs:
 
 # BOM outputs
   - name: 'Interactive BOM'
+    comment: "Bill of Materials in interactive HTML format"
     type: ibom
     dir: 'bom'
     category: 'bom'
@@ -40,9 +41,21 @@ outputs:
       extra_fields: 'manufacturerPartNumber, mouserPartNumber'
 
   - name: 'CSV export'
+    comment: "Bill of Materials in CSV format"
     type: bom
     dir: 'bom'
     category: 'bom'
+
+  - name: 'HTML export'
+    comment: "Bill of Materials in HTML format"
+    type: bom
+    dir: 'bom'
+    category: 'bom'
+    options:
+      format: HTML
+      columns:
+        - field: manufacturerPartNumber
+        - field: mouserPartNumber
 
 # PCB outputs
   - name: 'print_pcb'
