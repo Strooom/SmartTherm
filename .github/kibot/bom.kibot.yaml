@@ -1,0 +1,32 @@
+outputs:
+  - name: 'Interactive BOM'
+    comment: "Bill of Materials in interactive HTML format"
+    type: ibom
+    dir: 'bom'
+    category: 'bom'
+    options:
+      include_tracks: true
+      include_nets: true
+      highlight_pin1: selected
+      extra_fields: 'manufacturerPartNumber, mouserPartNumber'
+
+  - name: 'CSV export'
+    comment: "Bill of Materials in CSV format"
+    type: bom
+    dir: 'bom'
+    category: 'bom'
+
+  - name: 'HTML export'
+    comment: "Bill of Materials in HTML format"
+    type: bom
+    dir: 'bom'
+    category: 'bom'
+    options:
+      format: HTML
+      columns:
+        - References
+        - Part
+        - Value
+        - Quantity Per PCB
+        - manufacturerPartNumber
+        - mouserPartNumber

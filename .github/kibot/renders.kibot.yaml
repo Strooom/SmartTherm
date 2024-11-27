@@ -1,0 +1,22 @@
+outputs:
+  - name: 'render front'
+    type: blender_export
+    dir: 'pcb'
+    options:
+      add_default_light: true
+      light:
+        type: 'SUN'
+      render_options:
+        auto_crop: true
+        transparent_background: true
+        samples: 20
+      point_of_view:
+        - rotate_x: 20
+          rotate_y: 0
+        - rotate_x: -20
+          rotate_y: 180
+      fixed_auto_camera: false
+      auto_camera_z_axis_factor: 1.5
+      default_file_id: '_%03d'
+      outputs:
+        - type: render

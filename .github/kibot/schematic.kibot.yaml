@@ -1,0 +1,4 @@
+outputs:
+  - name: 'Schematic PDF'
+    type: pdf_sch_print
+    dir: 'schematic'

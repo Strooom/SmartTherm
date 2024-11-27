@@ -5,51 +5,12 @@ kibot:
 
 import:
   - file: preflights.kibot.yaml
-  # - file: schematic.kibot.yaml
-  # - file: bom.kibot.yaml
+  - file: schematic.kibot.yaml
+  - file: bom.kibot.yaml
   # - file: pcb.kibot.yaml
-  # - file: renders.kibot.yaml
+  - file: renders.kibot.yaml
 
 outputs:
-# Schematic outputs
-  - name: 'Schematic PDF'
-    type: pdf_sch_print
-    dir: 'schematic'
-
-# BOM outputs
-  - name: 'Interactive BOM'
-    comment: "Bill of Materials in interactive HTML format"
-    type: ibom
-    dir: 'bom'
-    category: 'bom'
-    options:
-      include_tracks: true
-      include_nets: true
-      highlight_pin1: selected
-      extra_fields: 'manufacturerPartNumber, mouserPartNumber'
-
-  - name: 'CSV export'
-    comment: "Bill of Materials in CSV format"
-    type: bom
-    dir: 'bom'
-    category: 'bom'
-
-  - name: 'HTML export'
-    comment: "Bill of Materials in HTML format"
-    type: bom
-    dir: 'bom'
-    category: 'bom'
-    options:
-      format: HTML
-      columns:
-        - References
-        - Part
-        - Value
-        - Quantity Per PCB
-        - manufacturerPartNumber
-        - mouserPartNumber
-
-# PCB outputs
   - name: 'print_pcb'
     dir: 'pcb'
     type: pcb_print
@@ -78,27 +39,6 @@ outputs:
     type : step
     dir: 'pcb'
 
-  - name: 'render front'
-    type: blender_export
-    dir: 'pcb'
-    options:
-      add_default_light: true
-      light:
-        type: 'SUN'
-      render_options:
-        auto_crop: true
-        transparent_background: true
-        samples: 20
-      point_of_view:
-        - rotate_x: 20
-          rotate_y: 0
-        - rotate_x: -20
-          rotate_y: 180
-      fixed_auto_camera: false
-      auto_camera_z_axis_factor: 1.5
-      default_file_id: '_%03d'
-      outputs:
-        - type: render
 
   - name: 'stencil'
     comment: "Creates a 3D printable stencil"
