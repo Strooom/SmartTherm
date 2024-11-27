@@ -38,6 +38,9 @@ outputs:
     dir: 'bom'
     category: 'bom'
     options:
+      include_tracks: true
+      include_nets: true
+      highlight_pin1: selected
       extra_fields: 'manufacturerPartNumber, mouserPartNumber'
 
   - name: 'CSV export'
@@ -54,8 +57,12 @@ outputs:
     options:
       format: HTML
       columns:
-        - field: manufacturerPartNumber
-        - field: mouserPartNumber
+        - References
+        - Part
+        - Value
+        - Quantity Per PCB
+        - manufacturerPartNumber
+        - mouserPartNumber
 
 # PCB outputs
   - name: 'print_pcb'
