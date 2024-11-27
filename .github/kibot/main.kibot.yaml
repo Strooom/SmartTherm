@@ -126,5 +126,7 @@ outputs:
     dir: bom
     options:
       output: 'simple'
-      no_price: true
-      no_collapse: true
+      currency: 'EUR'
+      distributors: 'Mouser'
+      # no_price: true
+      # no_collapse: true
