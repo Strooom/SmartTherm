@@ -114,3 +114,8 @@ outputs:
       default_file_id: '_%03d'
       outputs:
         - type: render
+
+  - name: 'stencil'
+    comment: "Creates a 3D printable stencil"
+    type: stencil_3d
+    dir: pcb
