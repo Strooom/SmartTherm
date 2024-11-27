@@ -119,3 +119,12 @@ outputs:
     comment: "Creates a 3D printable stencil"
     type: stencil_3d
     dir: pcb
+
+  - name: 'Costs'
+    comment: "Components costs spreadsheet"
+    type: kicost
+    dir: bom
+    options:
+      output: 'simple'
+      no_price: true
+      no_collapse: true
