@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/github/workspace/SmartTherm-PCB.kicad_sch</source>
+    <date>Date1</date>
+    <tool>Eeschema 8.0.8+1</tool>
+    <textvar name="majorVersion">1</textvar>
+    <textvar name="minorVersion">0</textvar>
+    <textvar name="releaseDate">Tue Feb 04 17:02:39 2025</textvar>
+    <textvar name="releaseDateShort">04 Feb 25</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SmartTherm</title>
+        <company>Strooom</company>
+        <rev>V3.0</rev>
+        <date>Date2</date>
+        <source>SmartTherm-PCB.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>4.7uF</value>
+      <footprint>1projectLibrary:C_Disc_D4.7mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://www.mouser.be/datasheet/2/281/1/RCE_X7R_X7S_25V_100V_E-1670872.pdf</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RCEC72A475MWM1H03A</field>
+        <field name="mouserPartNumber">81-RCEC72A475MWM1H3A</field>
+        <field name="Footprint">1projectLibrary:C_Disc_D4.7mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet">https://www.mouser.be/datasheet/2/281/1/RCE_X7R_X7S_25V_100V_E-1670872.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="manufacturerPartNumber" value="RCEC72A475MWM1H03A"/>
+      <property name="mouserPartNumber" value="81-RCEC72A475MWM1H3A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8acfb5</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100 nF</value>
+      <footprint>1projectLibrary:C_Disc_D4.7mm_W2.5mm_P5.00mm</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf?ref_disty=mouser</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">FA22X7R2J104KNU06</field>
+        <field name="mouserPartNumber">810-FA22X7R2J104KNU6</field>
+        <field name="Footprint">1projectLibrary:C_Disc_D4.7mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/lead-mlcc/catalog/leadmlcc_halogenfree_fa_en.pdf?ref_disty=mouser</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="manufacturerPartNumber" value="FA22X7R2J104KNU06"/>
+      <property name="mouserPartNumber" value="810-FA22X7R2J104KNU6"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8a0ed9</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>Mounting</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <fields>
+        <field name="manufacturerPartNumber">na</field>
+        <field name="mouserPartNumber">na</field>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="manufacturerPartNumber" value="na"/>
+      <property name="mouserPartNumber" value="na"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605f43b9</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>Mounting</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <fields>
+        <field name="manufacturerPartNumber">na</field>
+        <field name="mouserPartNumber">na</field>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="manufacturerPartNumber" value="na"/>
+      <property name="mouserPartNumber" value="na"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605f4cd1</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>Mounting</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <fields>
+        <field name="manufacturerPartNumber">na</field>
+        <field name="mouserPartNumber">na</field>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="manufacturerPartNumber" value="na"/>
+      <property name="mouserPartNumber" value="na"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605f5630</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>Mounting</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad</footprint>
+      <fields>
+        <field name="manufacturerPartNumber">na</field>
+        <field name="mouserPartNumber">na</field>
+        <field name="Footprint">MountingHole:MountingHole_3.2mm_M3_Pad</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="manufacturerPartNumber" value="na"/>
+      <property name="mouserPartNumber" value="na"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605f5c3f</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Junkers</value>
+      <footprint>1projectLibrary:TerminalBlock_Junkers</footprint>
+      <datasheet>https://www.phoenixcontact.com/us/products/1711042/pdf</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">1711042</field>
+        <field name="mouserPartNumber">651-1711042</field>
+        <field name="Footprint">1projectLibrary:TerminalBlock_Junkers</field>
+        <field name="Datasheet">https://www.phoenixcontact.com/us/products/1711042/pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x04" description="Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="manufacturerPartNumber" value="1711042"/>
+      <property name="mouserPartNumber" value="651-1711042"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <property name="ki_fp_filters" value="TerminalBlock*:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605d3600</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Display - Sensor</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal</footprint>
+      <datasheet>https://www.phoenixcontact.com/us/products/1730052/pdf</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">1730052</field>
+        <field name="mouserPartNumber">651-1730052</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal</field>
+        <field name="Datasheet">https://www.phoenixcontact.com/us/products/1730052/pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x06" description="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="manufacturerPartNumber" value="1730052"/>
+      <property name="mouserPartNumber" value="651-1730052"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <property name="ki_fp_filters" value="TerminalBlock*:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006060de19</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Ext LDR</value>
+      <footprint>1projectLibrary:TerminalBlock_LDR</footprint>
+      <datasheet>https://www.phoenixcontact.com/us/products/1711026/pdf</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">1711026</field>
+        <field name="mouserPartNumber">651-1711026</field>
+        <field name="Footprint">1projectLibrary:TerminalBlock_LDR</field>
+        <field name="Datasheet">https://www.phoenixcontact.com/us/products/1711026/pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="manufacturerPartNumber" value="1711026"/>
+      <property name="mouserPartNumber" value="651-1711026"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <property name="ki_fp_filters" value="TerminalBlock*:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006063c5d6</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC546</value>
+      <footprint>1projectLibrary:TO-92L_Inline_Wide</footprint>
+      <datasheet>https://diotec.com/request/datasheet/bc546.pdf</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">BC546A</field>
+        <field name="mouserPartNumber">637-BC546A</field>
+        <field name="Footprint">1projectLibrary:TO-92L_Inline_Wide</field>
+        <field name="Datasheet">https://diotec.com/request/datasheet/bc546.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC546" description="0.1A Ic, 65V Vce, Small Signal NPN Transistor, TO-92"/>
+      <property name="manufacturerPartNumber" value="BC546A"/>
+      <property name="mouserPartNumber" value="637-BC546A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
+      <property name="ki_fp_filters" value="TO?92*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f87a279</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>3K3</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S332GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-3.3K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S332GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-3.3K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f86bce9</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S103GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-10K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S103GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-10K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f86fc1a</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S103GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-10K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S103GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-10K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8b6aa2</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>22K</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S223GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-22K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S223GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-22K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f86ac4d</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>47K</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S473GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-47K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S473GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-47K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8add68</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>470</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S471GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-470</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S471GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-470"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f86c4e4</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>1K</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S102GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-1K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S102GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-1K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8a091a</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1K</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S102GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-1K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S102GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-1K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f873e42</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>4K7</value>
+      <footprint>1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/doc?31027</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">RL07S472GB14</field>
+        <field name="mouserPartNumber">71-RL07S-G-4.7K</field>
+        <field name="Footprint">1projectLibrary:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet">https://www.vishay.com/doc?31027</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="manufacturerPartNumber" value="RL07S472GB14"/>
+      <property name="mouserPartNumber" value="71-RL07S-G-4.7K"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f91fbc4</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>WeMos D1 mini</value>
+      <footprint>1projectLibrary:WEMOS_D1_mini_light</footprint>
+      <datasheet>https://wiki.wemos.cc/products:d1:d1_mini#documentation</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber"/>
+        <field name="mouserPartNumber"/>
+        <field name="Footprint">1projectLibrary:WEMOS_D1_mini_light</field>
+        <field name="Datasheet">https://wiki.wemos.cc/products:d1:d1_mini#documentation</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU_Module" part="WeMos_D1_mini" description="32-bit microcontroller module with WiFi"/>
+      <property name="manufacturerPartNumber" value=""/>
+      <property name="mouserPartNumber" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="ESP8266 WiFi microcontroller ESP8266EX"/>
+      <property name="ki_fp_filters" value="WEMOS*D1*mini*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f8673af</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ILD74</value>
+      <footprint>1projectLibrary:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.vishay.com/doc?83640</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">ILD74</field>
+        <field name="mouserPartNumber">782-ILD74</field>
+        <field name="Footprint">1projectLibrary:DIP-8_W7.62mm</field>
+        <field name="Datasheet">https://www.vishay.com/doc?83640</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Isolator" part="ILD74" description="Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8"/>
+      <property name="manufacturerPartNumber" value="ILD74"/>
+      <property name="mouserPartNumber" value="782-ILD74"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="NPN DC Dual Optocoupler"/>
+      <property name="ki_fp_filters" value="DIP*W7.62mm* DIP*W10.16mm* SMDIP*W9.53mm*Clearance8mm*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f85ee3c 00000000-0000-0000-0000-00005f85ea1f</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>LM358</value>
+      <footprint>1projectLibrary:DIP-8_W7.62mm</footprint>
+      <datasheet>https://www.ti.com/lit/gpn/lm358-n</datasheet>
+      <fields>
+        <field name="manufacturerPartNumber">LM358N/NOPB</field>
+        <field name="mouserPartNumber">926-LM358N/NOPB</field>
+        <field name="Footprint">1projectLibrary:DIP-8_W7.62mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/gpn/lm358-n</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="LM358" description="Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="manufacturerPartNumber" value="LM358N/NOPB"/>
+      <property name="mouserPartNumber" value="926-LM358N/NOPB"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="SmartTherm-PCB.kicad_sch"/>
+      <property name="ki_keywords" value="dual opamp"/>
+      <property name="ki_fp_filters" value="SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f86234a 00000000-0000-0000-0000-00005f86483e 00000000-0000-0000-0000-00005f860cd0</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="LM358">
+      <description>Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM358</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm2904-n.pdf</field>
+        <field name="Description">Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x04">
+      <description>Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x06">
+      <description>Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="ILD74">
+      <description>Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8</description>
+      <docs>https://www.vishay.com/docs/83640/ild74.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>DIP*W10.16mm*</fp>
+        <fp>SMDIP*W9.53mm*Clearance8mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ILD74</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.vishay.com/docs/83640/ild74.pdf</field>
+        <field name="Description">Dual Optocoupler, NPN Phototransistor Output, TTL compatible, DIP8/SMD8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="WeMos_D1_mini">
+      <description>32-bit microcontroller module with WiFi</description>
+      <docs>https://wiki.wemos.cc/products:d1:d1_mini#documentation</docs>
+      <footprints>
+        <fp>WEMOS*D1*mini*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WeMos_D1_mini</field>
+        <field name="Footprint">Module:WEMOS_D1_mini_light</field>
+        <field name="Datasheet">https://wiki.wemos.cc/products:d1:d1_mini#documentation</field>
+        <field name="Description">32-bit microcontroller module with WiFi</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RST}" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="D0" type="bidirectional"/>
+        <pin num="4" name="SCK/D5" type="bidirectional"/>
+        <pin num="5" name="MISO/D6" type="bidirectional"/>
+        <pin num="6" name="MOSI/D7" type="bidirectional"/>
+        <pin num="7" name="CS/D8" type="bidirectional"/>
+        <pin num="8" name="3V3" type="power_out"/>
+        <pin num="9" name="5V" type="power_in"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="D4" type="bidirectional"/>
+        <pin num="12" name="D3" type="bidirectional"/>
+        <pin num="13" name="SDA/D2" type="bidirectional"/>
+        <pin num="14" name="SCL/D1" type="bidirectional"/>
+        <pin num="15" name="RX" type="input"/>
+        <pin num="16" name="TX" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC546">
+      <description>0.1A Ic, 65V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC550-D.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC546</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC550-D.pdf</field>
+        <field name="Description">0.1A Ic, 65V Vce, Small Signal NPN Transistor, TO-92</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="E" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>/usr/share/kicad/symbols/Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols/Device.kicad_sym</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>/usr/share/kicad/symbols/Isolator.kicad_sym</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>/usr/share/kicad/symbols/MCU_Module.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/usr/share/kicad/symbols/Transistor_BJT.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="3V3" pintype="power_out"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="5V" pintype="power_in"/>
+    </net>
+    <net code="3" name="+24V">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U3" pin="8" pinfunction="V+" pintype="power_in"/>
+    </net>
+    <net code="4" name="/24V-Present">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="SCL/D1" pintype="bidirectional"/>
+      <node ref="U2" pin="7" pintype="passive"/>
+    </net>
+    <net code="5" name="/Drive1">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="CS/D8" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/Drive2">
+      <node ref="Q1" pin="2" pinfunction="B" pintype="input"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U2" pin="6" pintype="passive"/>
+    </net>
+    <net code="7" name="/RX">
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="RX" pintype="input"/>
+    </net>
+    <net code="8" name="/TX">
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="TX" pintype="output"/>
+    </net>
+    <net code="9" name="/Tin">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="D3" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="GND">
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="3" pintype="passive"/>
+      <node ref="U2" pin="8" pintype="passive"/>
+    </net>
+    <net code="11" name="GND2">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="E" pintype="passive"/>
+      <node ref="U2" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="V-" pintype="power_in"/>
+    </net>
+    <net code="12" name="Net-(J1-Pin_2)">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(J3-Pin_1)">
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="14" name="Net-(Q1-C)">
+      <node ref="Q1" pin="1" pinfunction="C" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="15" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U2" pin="1" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="4" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(U3A--)">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pintype="output"/>
+      <node ref="U3" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="18" name="Net-(U3B-+)">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="19" name="Net-(U3B--)">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="-" pintype="input"/>
+      <node ref="U3" pin="7" pintype="output"/>
+    </net>
+    <net code="20" name="unconnected-(U1-D0-Pad3)">
+      <node ref="U1" pin="3" pinfunction="D0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U1-D4-Pad11)">
+      <node ref="U1" pin="11" pinfunction="D4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U1-MISO{slash}D6-Pad5)">
+      <node ref="U1" pin="5" pinfunction="MISO/D6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U1-MOSI{slash}D7-Pad6)">
+      <node ref="U1" pin="6" pinfunction="MOSI/D7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U1-SCK{slash}D5-Pad4)">
+      <node ref="U1" pin="4" pinfunction="SCK/D5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U1-SDA{slash}D2-Pad13)">
+      <node ref="U1" pin="13" pinfunction="SDA/D2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U1-~{RST}-Pad1)">
+      <node ref="U1" pin="1" pinfunction="~{RST}" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
