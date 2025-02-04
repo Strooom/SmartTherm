@@ -11,13 +11,16 @@ preflight:
   check_fields:
     - field: manufacturerName
       regex: '.+'
-      severity_missing: error
+      severity_missing: warning
     - field: manufacturerPartNumber
       regex: '.+'
       severity: warning
     - field: octopartUrl
       regex: '.+'
       severity: warning
+    - field: mpn
+      regex: '.+'
+      severity: info
     - field: "*"
       severity_missing: warning
   check_zone_fills: true
