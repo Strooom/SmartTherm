@@ -5,53 +5,56 @@ kibot:
 
 import:
   - file: preflights.kibot.yaml
-  - file: schematic.kibot.yaml
-  - file: bom.kibot.yaml
+  # - file: schematic.kibot.yaml
+  # - file: bom.kibot.yaml
   # - file: pcb.kibot.yaml
-  - file: renders.kibot.yaml
+  # - file: renders.kibot.yaml
 
-outputs:
-  - name: 'print_pcb'
-    dir: 'pcb'
-    type: pcb_print
-    options:
-      scaling: 0
-      autoscale_margin_x: 10
-      autoscale_margin_y: 10
-      format: 'PDF'
-      plot_sheet_reference: false
-      pages:
-        - layers:
-            - layer: F.Cu
-              color: '#E23B51'
-          sort_layers: true
-        - layers:
-            - layer: F.Silkscreen
-          monochrome: true
-          sort_layers: true
-        - layers:
-            - layer: B.Cu
-              color: '#3361B8'
-          sort_layers: true
-          mirror: true
+# outputs:
+#   - name: 'print_pcb'
+#     dir: 'pcb'
+#     type: pcb_print
+#     options:
+#       scaling: 0
+#       autoscale_margin_x: 10
+#       autoscale_margin_y: 10
+#       format: 'PDF'
+#       plot_sheet_reference: false
+#       pages:
+#         - layers:
+#             - layer: F.Cu
+#               color: '#E23B51'
+#           sort_layers: true
+#         - layers:
+#             - layer: F.Silkscreen
+#           monochrome: true
+#           sort_layers: true
+#         - layers:
+#             - layer: B.Cu
+#               color: '#3361B8'
+#           sort_layers: true
+#           mirror: true
 
-  - name: '3D model - .step'
-    type : step
-    dir: 'pcb'
+#   - name: '3D model - .step'
+#     type : step
+#     dir: 'pcb'
 
 
-  - name: 'stencil'
-    comment: "Creates a 3D printable stencil"
-    type: stencil_3d
-    dir: pcb
+# - name: 'stencil'
+#   comment: "Creates a 3D printable stencil"
+#   type: stencil_3d
+#   dir: pcb
 
-  - name: 'Costs'
-    comment: "Components costs spreadsheet"
-    type: kicost
-    dir: bom
-    options:
-      output: 'simple'
-      currency: 'EUR'
-      distributors: 'mouser'
+  # - name: 'Costs'
+  #   comment: "Components costs spreadsheet"
+  #   type: kicost
+  #   dir: bom
+  #   options:
+  #     output: 'simple'
+  #     currency: 'EUR'
+  #     distributors: 'mouser'
+  #     translate_fields:
+  #       field: 'mouserPartNumber'
+  #       name: ''
       # no_price: true
       # no_collapse: true

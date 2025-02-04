@@ -144,7 +144,9 @@ jobs:
           echo $BUILDTIMESTAMPSHORT
 
       - name: run KiBOT 
-        uses: INTI-CMNB/KiBot@v2_k8
+        uses: INTI-CMNB/KiBot@v2_dk8
+#        uses: INTI-CMNB/KiBot@v2_k8 : v2_k8 = stable release, v2_dk8 is dev version
+
         with:
 #          additional_args: '--verbose'
           config: .github/kibot/main.kibot.yaml

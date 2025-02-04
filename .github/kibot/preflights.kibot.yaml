@@ -8,6 +8,15 @@ preflight:
       command: "echo $BUILDTIMESTAMP" 
     - variable: "releaseDateShort"
       command: "echo $BUILDTIMESTAMPSHORT" 
+  check_fields:
+    - field: Reference
+      regex: '.*'
+      severity: warning
+    - field: Value
+      regex: '.*'
+      severity: warning
+    - field: "*"
+      severity_missing: warning
   check_zone_fills: true
   erc:
     category: 'schematics'
