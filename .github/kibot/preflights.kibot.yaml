@@ -10,13 +10,13 @@ preflight:
       command: "echo $BUILDTIMESTAMPSHORT" 
   check_fields:
     - field: manufacturerName
-      regex: '.*'
-      severity: warning
+      regex: '.+'
+      severity_missing: error
     - field: manufacturerPartNumber
-      regex: '.*'
+      regex: '.+'
       severity: warning
     - field: octopartUrl
-      regex: '.*'
+      regex: '.+'
       severity: warning
     - field: "*"
       severity_missing: warning
