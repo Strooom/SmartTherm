@@ -1,4 +1,8 @@
-ERC report (2024-11-27T21:26:50+0000, Encoding UTF8)
+ERC report (2025-02-04T17:02:44+0000, Encoding UTF8)
 
 ***** Sheet /
- ** ERC messages: 0  Errors 0  Warnings 0
+[lib_symbol_issues]: Symbol 'WeMos_D1_mini' not found in symbol library 'MCU_Module'
+    ; warning
+    @(0.7112 mm, 0.9779 mm): Symbol U1 [WeMos_D1_mini]
+
+ ** ERC messages: 1  Errors 0  Warnings 1
